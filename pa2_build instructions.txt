@@ -1,0 +1,12 @@
+1. build .class files
+javac server.java client.java
+
+2. build .jar files
+jar cfve server.jar server server.class
+jar cfve client.jar client client.class
+
+[to find server's IP address (to be typed into `java client [URL] port`), run the `ipconfig` command in pwsh on the server machine and look at the "Wireless LAN adapter Wi-Fi", and use the IPv4 Address, with the port that the server is planning to be started with]
+
+3. run files
+java server [port]
+java client [IP] port

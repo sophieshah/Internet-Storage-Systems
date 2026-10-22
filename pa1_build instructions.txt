@@ -1,0 +1,8 @@
+1. javac server.java client.java
+2. jar cfve server.jar server server.class
+3. jar cfve client.jar client client.class
+
+[to find server's IP address (to be typed into `java client [URL] port`), run the `ipconfig` command on the server machine and look at the "Wireless LAN adapter Wi-Fi", and use the IPv4 Address, with the port that the server is planning to be started with]
+
+4. java server [port]
+5. java client [URL] [port]
